@@ -7,11 +7,11 @@ import static org.junit.Assert.*;
 
 public class MatchMultipleOcuurenceTest {
 
-    MatchMultipleOcuurence mt;
+    MatchMultipleOcuurence matchMultipleOcuurence;
     String[] st={"Found at: 4-6","Found at: 10-12","Found at: 27-29"};
     @Before
     public void setUp() throws Exception {
-        mt=new MatchMultipleOcuurence();
+        matchMultipleOcuurence=new MatchMultipleOcuurence();
     }
 
     @After
@@ -20,12 +20,12 @@ public class MatchMultipleOcuurenceTest {
 
     @Test
     public void matchMultipleOcuurenceOfStringSuccess() {
-       assertEquals(st,mt.matchMultipleOcuurenceOfString("She sells seashells by the seashore","se"));
+       assertEquals(st,matchMultipleOcuurence.matchMultipleOcuurenceOfString("She sells seashells by the seashore","se"));
     }
 
     @Test
     public void matchMultipleOcuurenceOfStringFailure() {
-        assertNotEquals(st,mt.matchMultipleOcuurenceOfString("sells seashells by the seashore","se"));
+        assertNotEquals(st,matchMultipleOcuurence.matchMultipleOcuurenceOfString("sells seashells by the seashore","se"));
     }
 
 }

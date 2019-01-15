@@ -4,6 +4,13 @@ import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+/**TWrite a program to find out the multiple occurrences of the given word in a string using Matcher methods.
+ *
+ * @version 1.0 11-1-2018
+ *
+ * @author Uday N
+ */
+
 public class MatchMultipleOcuurence {
 
     public  String[] matchMultipleOcuurenceOfString(String str,String match)
@@ -25,19 +32,5 @@ public class MatchMultipleOcuurence {
         {
          return null;
         }
-    }
-
-
-    public static void main(String[] args) {
-
-        MatchMultipleOcuurence mt=new MatchMultipleOcuurence();
-        Scanner sc=new Scanner(System.in);
-        String text=sc.nextLine();
-        String match=sc.nextLine();
-        String[] res=mt.matchMultipleOcuurenceOfString(text,match);
-        for(String s:res)
-            System.out.println(s);
-
-
     }
 }

@@ -4,12 +4,12 @@ import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class FIndThePresenceofNameTest {
-    FindThePresenceofName fp;
+public class FindThePresenceofNameTest {
+    FindThePresenceofName findThePresenceofName;
 
     @Before
     public void setUp() throws Exception {
-        fp=new FindThePresenceofName();
+        findThePresenceofName=new FindThePresenceofName();
     }
 
     @After
@@ -18,11 +18,11 @@ public class FIndThePresenceofNameTest {
 
     @Test
     public void findtheNameInaStringSuccess() {
-        assertEquals(true,fp.findtheNameInaString("This is Harry.","Harry"));
+        assertEquals(true,findThePresenceofName.findtheNameInaString("This is Harry.","Harry"));
     }
 
     @Test
     public void findtheNameInaStringFailure() {
-        assertNotEquals(false,fp.findtheNameInaString("This is Harry.","Harry"));
+        assertNotEquals(false,findThePresenceofName.findtheNameInaString("This is Harry.","Harry"));
     }
 }

@@ -23,10 +23,6 @@ public class Transpose {
         {
             return "Input should be not be empty or null";
         }
-
-
-
-
     }
 
     public static String reverseString(String s)
@@ -39,11 +35,4 @@ public class Transpose {
         return  str;
     }
 
-    public static void main(String[] args) {
-        Transpose tr=new Transpose();
-        Scanner sc=new Scanner(System.in);
-        String input=sc.nextLine();
-        System.out.println(tr.transpose(input));
-
-    }
 }

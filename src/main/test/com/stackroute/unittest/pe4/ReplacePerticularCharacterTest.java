@@ -6,11 +6,11 @@ import static org.junit.Assert.*;
 
 public class ReplacePerticularCharacterTest {
 
-    ReplacePerticularCharacter replace;
+    ReplacePerticularCharacter replacePerticularCharacter;
 
     @Before
     public void setUp() throws Exception {
-        replace=new ReplacePerticularCharacter();
+        replacePerticularCharacter=new ReplacePerticularCharacter();
     }
 
     @After
@@ -19,12 +19,12 @@ public class ReplacePerticularCharacterTest {
 
     @Test
     public void replacePerticularCharacterSuccess() {
-        assertEquals("faity fry",replace.replacePerticularCharacter("daily dry"));
+        assertEquals("faity fry",replacePerticularCharacter.replacePerticularCharacter("daily dry"));
     }
 
     @Test
     public void replacePerticularCharacterFailure() {
-        assertNotEquals("faityy fry",replace.replacePerticularCharacter("daily dry"));
+        assertNotEquals("faityy fry",replacePerticularCharacter.replacePerticularCharacter("daily dry"));
     }
 
 }

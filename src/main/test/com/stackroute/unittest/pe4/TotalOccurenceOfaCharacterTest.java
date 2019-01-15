@@ -6,11 +6,11 @@ import static org.junit.Assert.*;
 
 public class TotalOccurenceOfaCharacterTest {
 
-    TotalOccurenceOfaCharacter total;
+    TotalOccurenceOfaCharacter totalOccurenceOfaCharacter;
 
     @Before
     public void setUp() throws Exception {
-        total=new TotalOccurenceOfaCharacter();
+        totalOccurenceOfaCharacter=new TotalOccurenceOfaCharacter();
     }
 
     @After
@@ -19,11 +19,11 @@ public class TotalOccurenceOfaCharacterTest {
 
     @Test
     public void totalOccurenceOfCharacterSuccess() {
-        assertEquals(10,total.totalOccurenceOfCharacter("Java is java again java again"));
+        assertEquals(10,totalOccurenceOfaCharacter.totalOccurenceOfCharacter("Java is java again java again"));
     }
 
     @Test
     public void totalOccurenceOfCharacterFailure() {
-        assertNotEquals(11,total.totalOccurenceOfCharacter("Java is java again java again"));
+        assertNotEquals(11,totalOccurenceOfaCharacter.totalOccurenceOfCharacter("Java is java again java again"));
     }
 }
